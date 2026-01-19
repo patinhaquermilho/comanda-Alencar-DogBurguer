@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width,
+  initial-scale=1.0">
+  <title>Comanda – Garçom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>🍽️ Comanda</h1>
+
+  <input type="number" id="mesa" class="mesa" placeholder="Mesa">
+
+  <details open>
+    <summary>🌭 Cachorro-quente</summary>
+
+    <div class="item">
+      <span>Simples</span>
+      <button onclick="remover('Cachorro-quente simples')">−</button>
+      <button onclick="adicionar('Cachorro-quente simples')">+</button>
+    </div>
+
+    <div class="item">
+      <span>Completo</span>
+      <button onclick="remover('Cachorro-quente completo')">−</button>
+      <button onclick="adicionar('Cachorro-quente completo')">+</button>
+    </div>
+  </details>
+
+  <details>
+    <summary>🥟 Pastel</summary>
+
+    <div class="item">
+      <span>Queijo</span>
+      <button onclick="remover('Pastel de queijo')">−</button>
+      <button onclick="adicionar('Pastel de queijo')">+</button>
+    </div>
+
+    <div class="item">
+      <span>Carne</span>
+      <button onclick="remover('Pastel de carne')">−</button>
+      <button onclick="adicionar('Pastel de carne')">+</button>
+    </div>
+
+    <div class="item">
+      <span>Frango</span>
+      <button onclick="remover('Pastel de frango')">−</button>
+      <button onclick="adicionar('Pastel de frango')">+</button>
+    </div>
+  </details>
+
+  <details>
+    <summary>🥤 Refrigerante</summary>
+
+    <div class="item">
+      <span>Coca-Cola</span>
+      <button onclick="remover('Coca-Cola')">−</button>
+      <button onclick="adicionar('Coca-Cola')">+</button>
+    </div>
+
+    <div class="item">
+      <span>Guaraná</span>
+      <button onclick="remover('Guaraná')">−</button>
+      <button onclick="adicionar('Guaraná')">+</button>
+    </div>
+  </details>
+
+  <h3>🧾 Comanda</h3>
+  <ul id="lista"></ul>
+
+  <button class="enviar" onclick="enviarPedido()">Enviar para cozinha</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
